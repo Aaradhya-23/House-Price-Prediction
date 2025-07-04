@@ -1,67 +1,59 @@
-# House Price Prediction using Machine Learning
+# House Price Prediction | Machine Learning Project
 
-A data-driven project to predict house prices in Boston using regression models. This project demonstrates a complete machine learning workflow, from data cleaning and exploratory data analysis to model training and performance optimization. The final model achieves a **Coefficient of Determination (R²) of 0.87**.
 
-![Feature Importance Plot](images/feature_importance.png)
-*(This is a placeholder. After you run your notebook, save your feature importance plot to the `images` folder and it will show up here.)*
+## Overview
 
----
-
-### Tech Stack
-
-*   **Python**
-*   **pandas** for data manipulation and analysis
-*   **scikit-learn** for machine learning models and metrics
-*   **seaborn** & **Matplotlib** for data visualization
-*   **Jupyter Notebook** as the development environment
+This project focuses on predicting house prices using various regression models. The goal was to build a model that can accurately estimate the market value of a house based on its features. This was a self-directed project developed from May to June 2024 to apply and showcase skills in data science and machine learning.
 
 ---
 
-### Project Workflow
+## Key Features & Results
 
-1.  **Data Loading and Cleaning:** The Boston Housing dataset was loaded using pandas. Initial data cleaning was performed to handle any inconsistencies.
-2.  **Exploratory Data Analysis (EDA):** A thorough EDA was conducted using seaborn and Matplotlib to understand feature distributions, correlations, and outliers. Key relationships between features (like number of rooms, crime rate) and house prices were identified.
-3.  **Feature Engineering & Selection:** Features were selected based on their correlation with the target variable and their importance as determined by initial model training.
-4.  **Model Training & Comparison:** Three different regression models were implemented and compared:
-    *   Linear Regression (as a baseline)
-    *   Decision Tree Regressor
-    *   Random Forest Regressor
-5.  **Hyperparameter Tuning & Evaluation:** The Random Forest model, being the most promising, was optimized using K-Fold Cross-Validation and GridSearch to find the best hyperparameters. The model's performance was evaluated using the **R² score**.
+*   **Models Developed:** Implemented and compared Linear Regression, Decision Tree, and Random Forest models.
+*   **Data Processing:** Executed comprehensive data cleaning, feature engineering, and Exploratory Data Analysis (EDA) using `pandas` and `seaborn` to uncover key market drivers.
+*   **Top Performance:** The final optimized **Random Forest model achieved a predictive R² score of 0.87** on the test set.
+*   **Model Optimization:** Leveraged cross-validation and hyperparameter tuning (e.g., GridSearch CV) to enhance model accuracy and prevent overfitting.
 
 ---
 
-### Results
+## Tech Stack
 
-The final, optimized Random Forest model achieved a robust **R² score of 0.87** on the test set, indicating that it can explain 87% of the variance in house prices, making it a reliable predictive tool.
+*   **Language:** Python
+*   **Libraries:** Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn
 
 ---
 
-### How to Run this Project
+## Project Walkthrough
 
-To run this project on your local machine, follow these steps:
+The project is detailed in the `house_price_prediction.ipynb` Jupyter Notebook, which covers:
+1.  **Data Loading & Initial Exploration:** Understanding the dataset's structure and features.
+2.  **Data Cleaning:** Handling missing values and correcting data types.
+3.  **Exploratory Data Analysis (EDA):** Visualizing relationships between features and the target variable (price).
+4.  **Feature Engineering:** Creating new features to improve model performance.
+5.  **Model Building & Training:** Training Linear Regression, Decision Tree, and Random Forest models.
+6.  **Model Evaluation & Tuning:** Comparing models using the R² score and optimizing the best performer.
+7.  **Conclusion:** Summarizing the final results and findings.
 
-1.  **Clone the repository:**
-    ```sh
-    git clone https://github.com/[your-username]/house-price-prediction.git
-    cd house-price-prediction
+---
+
+## How to Run
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/House-Price-Prediction.git
     ```
-
-2.  **Create a virtual environment:**
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
-
-3.  **Install the required libraries:**
-    ```sh
+2.  Install the required packages:
+    ```bash
     pip install -r requirements.txt
     ```
-
-4.  **Launch the Jupyter Notebook:**
-    ```sh
-    jupyter notebook House_Price_Prediction.ipynb
+3.  Open and run the Jupyter Notebook:
+    ```bash
+    jupyter notebook house_price_prediction.ipynb
     ```
-
 ---
 
-### File Structure
+## Key Result Visualization
+
+Here is a chart showing the most important features identified by the Random Forest model that influence house prices.
+
+![Feature Importance Chart](images/feature_importance.png) <!-- Link to your best chart -->
