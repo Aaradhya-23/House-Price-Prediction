@@ -1,4 +1,4 @@
-# House Price Prediction | Self-Project | ML ‡ (May’24 - Jun’24 )
+# House Price Prediction
 
 
 
